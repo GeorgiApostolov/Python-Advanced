@@ -12,7 +12,7 @@ while input_string != "End":
     if input_string.split()[0] == "refill":
         liters_water += int(input_string.split()[1])
     elif int(input_string) > liters_water:
-        people.popleft()
+        break
     else:
         liters_water -= int(input_string)
         print(f"{people.popleft()} got water")
